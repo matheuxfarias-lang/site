@@ -207,13 +207,12 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; color: var(--
   border-radius: 50%;
   background: linear-gradient(145deg, var(--navy-700), var(--navy-900));
   border: 2px solid var(--gold-400);
-  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
 }
-.hero-photo span {
-  font-family: var(--font-serif);
-  font-size: 2.4rem;
-  color: var(--gold-400);
-  font-weight: 700;
+.hero-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 .hero-card-line { width: 40px; height: 2px; background: var(--gold-500); margin: 0 auto 16px; }
 .hero-card-name { font-family: var(--font-serif); color: #fff; font-size: 1.15rem; margin-bottom: 4px; }
@@ -293,21 +292,24 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; color: var(--
   aspect-ratio: 4/5;
   border-radius: 20px;
   background: linear-gradient(160deg, var(--navy-800), var(--navy-950));
-  display: flex; align-items: center; justify-content: center;
   box-shadow: var(--shadow-md);
   position: relative;
+  overflow: hidden;
+}
+.sobre-photo-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  position: relative;
+  z-index: 0;
 }
 .sobre-photo-frame::after {
   content: "";
   position: absolute; inset: 14px;
-  border: 1px solid rgba(212,185,133,0.3);
+  border: 1px solid rgba(212,185,133,0.5);
   border-radius: 14px;
-}
-.sobre-photo-frame span {
-  font-family: var(--font-serif);
-  font-size: 4rem;
-  color: var(--gold-400);
-  font-weight: 700;
+  z-index: 1;
+  pointer-events: none;
 }
 .sobre-copy h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 20px; }
 .sobre-copy p { color: var(--ink-600); margin-bottom: 16px; font-size: 1.02rem; }
