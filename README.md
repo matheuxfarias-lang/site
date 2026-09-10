@@ -24,23 +24,14 @@ python3 -m http.server 8000
 
 ## Antes de publicar — itens a personalizar
 
-Os seguintes dados estão com **placeholders** e precisam ser substituídos:
+Já preenchidos: WhatsApp/telefone `(49) 99912-2820`, e-mail
+`advmatheuscamargo@gmail.com` e a foto do advogado (`assets/mrc.jpeg`).
 
-1. **Número de WhatsApp**: procure por `5500000000000` em `index.html` (3 ocorrências)
-   e em `js/main.js` (1 ocorrência) e troque pelo número real, no formato
-   `55DDXXXXXXXXX` (código do país + DDD + número, sem espaços ou símbolos).
-2. **Telefone e e-mail** exibidos na seção de contato (`#contato` em `index.html`).
-3. **Foto do advogado**: atualmente há um monograma "MC" no lugar da foto (na
-   seção *Hero* e na seção *Sobre*). Para usar uma foto real, salve o arquivo em
-   `assets/` (ex.: `assets/matheus.jpg`) e substitua os blocos:
-   - `.hero-photo` (em `index.html`, dentro de `.hero-card`)
-   - `.sobre-photo-frame` (em `index.html`, dentro de `#sobre`)
+Ainda com **placeholder**:
 
-   por uma tag `<img src="assets/matheus.jpg" alt="Dr. Matheus da Rosa Camargo">`,
-   mantendo as classes do contêiner para preservar o estilo (moldura, borda dourada etc.).
-4. **Redes sociais**: os ícones de Instagram/LinkedIn no rodapé apontam para `#`.
+1. **Redes sociais**: os ícones de Instagram/LinkedIn no rodapé apontam para `#`.
    Atualize os `href` com os links reais.
-5. **Endereço/localidade**: ajuste o texto "Santa Catarina · Online para todo o Brasil"
+2. **Endereço/localidade**: ajuste o texto "Santa Catarina · Online para todo o Brasil"
    se desejar informar cidade/endereço específico.
 
 ## Observação sobre publicidade advocatícia (OAB)

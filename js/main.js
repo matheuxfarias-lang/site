@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `Área de interesse: ${area}\n` +
         `Mensagem: ${mensagem}`;
 
-      const numeroWhatsApp = "5500000000000"; // TODO: substituir pelo número real
+      const numeroWhatsApp = "5549999122820";
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
       window.open(url, "_blank", "noopener");
     });
